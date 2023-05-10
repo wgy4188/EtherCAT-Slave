@@ -1,7 +1,8 @@
---cpu=Cortex-M4.fp
+--cpu=Cortex-M4.fp.sp
 ".\objects\main.o"
 ".\objects\bsp.o"
 ".\objects\stm32f4xx_it.o"
+".\objects\rtt_cmd.o"
 ".\objects\dio.o"
 ".\objects\pwm.o"
 ".\objects\exti.o"
@@ -54,6 +55,8 @@
 ".\objects\os_task.o"
 ".\objects\os_time.o"
 ".\objects\os_tmr.o"
+".\objects\segger_rtt.o"
+".\objects\segger_rtt_printf.o"
 --library_type=microlib --strict --scatter ".\Objects\RT2000.sct"
 --summary_stderr --info summarysizes --map --load_addr_map_info --xref --callgraph --symbols
 --info sizes --info totals --info unused --info veneers

@@ -10,7 +10,7 @@
       <TargetName>flash</TargetName>
       <ToolsetNumber>0x4</ToolsetNumber>
       <ToolsetName>ARM-ADS</ToolsetName>
-      <pCCUsed>5060528::V5.06 update 5 (build 528)::ARMCC</pCCUsed>
+      <pCCUsed>5060960::V5.06 update 7 (build 960)::.\ARMCC</pCCUsed>
       <uAC6>0</uAC6>
       <TargetOption>
         <TargetCommonOption>
@@ -184,6 +184,8 @@
             <hadXRAM>0</hadXRAM>
             <uocXRam>0</uocXRam>
             <RvdsVP>2</RvdsVP>
+            <RvdsMve>0</RvdsMve>
+            <RvdsCdeCp>0</RvdsCdeCp>
             <hadIRAM2>0</hadIRAM2>
             <hadIROM2>0</hadIROM2>
             <StupSel>8</StupSel>
@@ -324,6 +326,7 @@
             <uThumb>0</uThumb>
             <uSurpInc>0</uSurpInc>
             <uC99>1</uC99>
+            <uGnu>0</uGnu>
             <useXO>0</useXO>
             <v6Lang>1</v6Lang>
             <v6LangP>1</v6LangP>
@@ -336,7 +339,7 @@
               <MiscControls></MiscControls>
               <Define>USE_HAL_DRIVER, STM32F446xx,</Define>
               <Undefine></Undefine>
-              <IncludePath>..\App;..\Cmsis;..\Lib\Inc;..\Lib\Inc\Legacy;..\Cat;..\Drv;..\uCos_ii;..\uCos_ii\uCCPU;..\uCos_ii\uCPort;..\uCos_ii\uCSource;..\uCos_ii\uCLib</IncludePath>
+              <IncludePath>..\App;..\Cmsis;..\Lib\Inc;..\Lib\Inc\Legacy;..\Cat;..\Drv;..\uCos_ii;..\uCos_ii\uCCPU;..\uCos_ii\uCPort;..\uCos_ii\uCSource;..\uCos_ii\uCLib;..\RTT</IncludePath>
             </VariousControls>
           </Cads>
           <Aads>
@@ -349,7 +352,7 @@
             <NoWarn>0</NoWarn>
             <uSurpInc>0</uSurpInc>
             <useXO>0</useXO>
-            <uClangAs>0</uClangAs>
+            <ClangAsOpt>4</ClangAsOpt>
             <VariousControls>
               <MiscControls></MiscControls>
               <Define></Define>
@@ -395,10 +398,15 @@
               <FileType>1</FileType>
               <FilePath>..\App\stm32f4xx_it.c</FilePath>
             </File>
+            <File>
+              <FileName>rtt_cmd.c</FileName>
+              <FileType>1</FileType>
+              <FilePath>..\App\rtt_cmd.c</FilePath>
+            </File>
           </Files>
         </Group>
         <Group>
-          <GroupName>drv</GroupName>
+          <GroupName>bsp</GroupName>
           <Files>
             <File>
               <FileName>dio.c</FileName>
@@ -513,7 +521,7 @@
           </Files>
         </Group>
         <Group>
-          <GroupName>lib</GroupName>
+          <GroupName>fwlib</GroupName>
           <Files>
             <File>
               <FileName>stm32f4xx_hal.c</FileName>
@@ -692,6 +700,21 @@
             </File>
           </Files>
         </Group>
+        <Group>
+          <GroupName>RTT</GroupName>
+          <Files>
+            <File>
+              <FileName>SEGGER_RTT.c</FileName>
+              <FileType>1</FileType>
+              <FilePath>..\RTT\SEGGER_RTT.c</FilePath>
+            </File>
+            <File>
+              <FileName>SEGGER_RTT_printf.c</FileName>
+              <FileType>1</FileType>
+              <FilePath>..\RTT\SEGGER_RTT_printf.c</FilePath>
+            </File>
+          </Files>
+        </Group>
       </Groups>
     </Target>
   </Targets>
@@ -701,5 +724,14 @@
     <components/>
     <files/>
   </RTE>
+
+  <LayerInfo>
+    <Layers>
+      <Layer>
+        <LayName>EtherCAT</LayName>
+        <LayPrjMark>1</LayPrjMark>
+      </Layer>
+    </Layers>
+  </LayerInfo>
 
 </Project>

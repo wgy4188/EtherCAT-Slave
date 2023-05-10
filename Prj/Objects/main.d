@@ -13,8 +13,8 @@
 .\objects\main.o: ..\Cmsis\system_stm32f4xx.h
 .\objects\main.o: ..\Lib\Inc\stm32f4xx_hal_rcc.h
 .\objects\main.o: ..\Lib\Inc\stm32f4xx_hal_def.h
-.\objects\main.o: C:\Keil_v5\ARM\PACK\Keil\STM32F4xx_DFP\2.5.0\Drivers\CMSIS\Device\ST\STM32F4xx\Include\stm32f4xx.h
-.\objects\main.o: C:\Keil_v5\ARM\PACK\Keil\STM32F4xx_DFP\2.5.0\Drivers\CMSIS\Device\ST\STM32F4xx\Include\stm32f446xx.h
+.\objects\main.o: C:\Keil_Packs\Keil\STM32F4xx_DFP\2.5.0\Drivers\CMSIS\Device\ST\STM32F4xx\Include\stm32f4xx.h
+.\objects\main.o: C:\Keil_Packs\Keil\STM32F4xx_DFP\2.5.0\Drivers\CMSIS\Device\ST\STM32F4xx\Include\stm32f446xx.h
 .\objects\main.o: ..\Lib\Inc\stm32f4xx_hal.h
 .\objects\main.o: ..\Lib\Inc\Legacy/stm32_hal_legacy.h
 .\objects\main.o: C:\Keil_v5\ARM\ARMCC\Bin\..\include\stdio.h
@@ -78,3 +78,6 @@
 .\objects\main.o: ..\uCos_ii\uCCPU\cpu_def.h
 .\objects\main.o: ..\uCos_ii\uCSource\ucos_ii.h
 .\objects\main.o: ..\App\app_cfg.h
+.\objects\main.o: ..\App\rtt_cmd.h
+.\objects\main.o: ..\RTT\SEGGER_RTT.h
+.\objects\main.o: ..\RTT\SEGGER_RTT_Conf.h

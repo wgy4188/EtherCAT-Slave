@@ -16,8 +16,8 @@
 .\objects\qspi.o: ..\Cmsis\system_stm32f4xx.h
 .\objects\qspi.o: ..\Lib\Inc\stm32f4xx_hal_rcc.h
 .\objects\qspi.o: ..\Lib\Inc\stm32f4xx_hal_def.h
-.\objects\qspi.o: C:\Keil_v5\ARM\PACK\Keil\STM32F4xx_DFP\2.5.0\Drivers\CMSIS\Device\ST\STM32F4xx\Include\stm32f4xx.h
-.\objects\qspi.o: C:\Keil_v5\ARM\PACK\Keil\STM32F4xx_DFP\2.5.0\Drivers\CMSIS\Device\ST\STM32F4xx\Include\stm32f446xx.h
+.\objects\qspi.o: C:\Keil_Packs\Keil\STM32F4xx_DFP\2.5.0\Drivers\CMSIS\Device\ST\STM32F4xx\Include\stm32f4xx.h
+.\objects\qspi.o: C:\Keil_Packs\Keil\STM32F4xx_DFP\2.5.0\Drivers\CMSIS\Device\ST\STM32F4xx\Include\stm32f446xx.h
 .\objects\qspi.o: ..\Lib\Inc\stm32f4xx_hal.h
 .\objects\qspi.o: ..\Lib\Inc\Legacy/stm32_hal_legacy.h
 .\objects\qspi.o: C:\Keil_v5\ARM\ARMCC\Bin\..\include\stdio.h

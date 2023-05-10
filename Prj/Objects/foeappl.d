@@ -17,8 +17,8 @@
 .\objects\foeappl.o: ..\App\stm32f4xx_hal_conf.h
 .\objects\foeappl.o: ..\Lib\Inc\stm32f4xx_hal_rcc.h
 .\objects\foeappl.o: ..\Lib\Inc\stm32f4xx_hal_def.h
-.\objects\foeappl.o: C:\Keil_v5\ARM\PACK\Keil\STM32F4xx_DFP\2.5.0\Drivers\CMSIS\Device\ST\STM32F4xx\Include\stm32f4xx.h
-.\objects\foeappl.o: C:\Keil_v5\ARM\PACK\Keil\STM32F4xx_DFP\2.5.0\Drivers\CMSIS\Device\ST\STM32F4xx\Include\stm32f446xx.h
+.\objects\foeappl.o: C:\Keil_Packs\Keil\STM32F4xx_DFP\2.5.0\Drivers\CMSIS\Device\ST\STM32F4xx\Include\stm32f4xx.h
+.\objects\foeappl.o: C:\Keil_Packs\Keil\STM32F4xx_DFP\2.5.0\Drivers\CMSIS\Device\ST\STM32F4xx\Include\stm32f446xx.h
 .\objects\foeappl.o: ..\Lib\Inc\stm32f4xx_hal.h
 .\objects\foeappl.o: ..\Lib\Inc\Legacy/stm32_hal_legacy.h
 .\objects\foeappl.o: C:\Keil_v5\ARM\ARMCC\Bin\..\include\stdio.h
